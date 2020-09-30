@@ -15,7 +15,7 @@ config :latency_live, LatencyLiveWeb.Endpoint,
   load_from_system_env: true,
   url: [scheme: "https", host: "latency-live-view.herokuapp.com", port: 443],
   force_ssl: [rewrite_on: [:x_forwarded_proto]],
-  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
+  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   render_errors: [view: LatencyLiveWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: LatencyLive.PubSub,
   live_view: [signing_salt: "yDsVEQKM"],
