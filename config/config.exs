@@ -18,9 +18,9 @@ config :latency_live, LatencyLiveWeb.Endpoint,
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE")
   render_errors: [view: LatencyLiveWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: LatencyLive.PubSub,
-  live_view: [signing_salt: "yDsVEQKM"]
+  live_view: [signing_salt: "yDsVEQKM"],
   check_origin: [
-    "https://latency-live-view.herokuapp.com/",
+    "https://latency-live-view.herokuapp.com/"
   ]
 
 # Configures Elixir's Logger
