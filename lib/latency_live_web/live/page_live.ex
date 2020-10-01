@@ -22,11 +22,9 @@ defmodule LatencyLiveWeb.PageLive do
   """
   def get_response_and_save(url) do
     time_now=DateTime.utc_now() |> DateTime.add(7200, :second)
-    start_ms = System.monotonic_time(:milliseconds)
     # do the request and receive response
-    status=get_response_code(url)
-    end_ms = System.monotonic_time(:milliseconds)
-    latency = end_ms - start_ms
+    {time,status}=:timer.tc(LatencyLiveWeb.PageLive,:get_response_code,[url])
+    latency=div(time,1000)
     changeset= Response.changeset(%Response{}, %{latency: latency, status: status,url: url, time: time_now,})
     # save response obj
     Repo.insert(changeset)
