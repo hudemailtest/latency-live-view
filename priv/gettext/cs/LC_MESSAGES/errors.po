@@ -16,7 +16,7 @@ msgstr ""
 
 #, fuzzy
 msgid "has already been taken"
-msgstr ""
+msgstr "vzate"
 
 #, fuzzy
 msgid "is invalid"
