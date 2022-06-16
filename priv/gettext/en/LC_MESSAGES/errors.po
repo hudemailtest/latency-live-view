@@ -105,3 +105,7 @@ msgstr ""
 #, fuzzy
 msgid "must be equal to %{number}"
 msgstr ""
+
+#, fuzzy
+msgid "nieco"
+msgstr ""
