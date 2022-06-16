@@ -5,7 +5,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: lokalise.com\n"
 "Project-Id-Version: hudemailtest’s first project\n"
-"PO-Revision-Date: 2022-06-16 17:00\n"
+"PO-Revision-Date: 2022-06-16 17:06\n"
 "Last-Translator: lokalise.com\n"
 "Language-Team: lokalise.com\n\n"
 "Language: cs\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #, fuzzy
 msgid "has already been taken"
-msgstr "vzate"
+msgstr ""
 
 #, fuzzy
 msgid "is invalid"
